@@ -48,3 +48,18 @@ log = (message, level='log') -> console[level](message)
 ```js
 let log = (message, level = 'log') => console[level](message);
 ```
+
+## String interpolation / Template strings
+
+```coffee
+container = 'mug'
+liquid = 'hot chocolate'
+console.log "Filling the #{container} with #{liquid}..."
+```
+
+```js
+let container = 'mug'
+   ,liquid = 'hot chocolate';
+console.log(`Filling the ${container} with ${liquid}...`)
+```
+
