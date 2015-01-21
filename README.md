@@ -44,7 +44,9 @@ numbers = [ 1, 2, 3 ];
 (Math.sqrt num for num in numbers)
 ```
 
-ES6 equivalent:
+ES7 equivalent:
+
+___Proposed in ES6 but deferred to ES7.___
 
 ```js
 var numbers = [ 1, 2, 3 ];
