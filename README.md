@@ -39,3 +39,12 @@ var numbers = [ 1, 2, 3 ];
 [for (num of numbers) Math.sqrt(num)];
 ```
 
+## Default Params 
+
+```coffee
+log = (message, level='log') -> console[level](message)
+```
+
+```js
+let log = (message, level = 'log') => console[level](message);
+```
