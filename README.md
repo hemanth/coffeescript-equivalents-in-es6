@@ -109,3 +109,64 @@ let changeNumbers = () => {
 let inner = changeNumbers();
 // inner will be 10
 ```
+
+## Classes, Inheritance, and Super
+
+CoffeeScript:
+
+```coffee
+class Person
+  constructor: (@name) ->
+    @movement = "walks"
+
+  move: (meters) ->
+    console.log "#{@name} #{@movement} #{meters}m."
+
+class Hero extends Person
+  constructor: (@name, @movement) ->
+
+  move: ->
+    super 500
+
+clark = new Person "Clark Kent"
+superman = new Hero "Superman", "flies"
+
+clark.move(100)
+# -> Clark Kent walks 100m.
+superman.move()
+# -> Superman flies 500m.
+```
+
+ES6 equivalent:
+
+```js
+class Person {
+  constructor(name) {
+    this.name = name;
+    this.movement = "walks";
+  }
+
+  move(meters) {
+    console.log(`${this.name} ${this.movement} ${meters}m.`);
+  }
+}
+
+class Hero extends Person {
+  constructor(name, movement) {
+    this.name = name;
+    this.movement = movement;
+  }
+
+  move() {
+    super.move(500);
+  }
+}
+
+let clark = new Person("Clark Kent");
+let superman = new Hero("Superman", "flies");
+
+clark.move(100);
+// -> Clark Kent walks 100m.
+superman.move();
+// -> Superman flies 500m.
+```
