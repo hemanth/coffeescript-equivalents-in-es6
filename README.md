@@ -11,6 +11,7 @@
 - [Default Params](#default-params)
 - [String interpolation / Template strings](#string-interpolation--template-strings)
 - [Lexical Scope and Variable safety.](#lexical-scope-and-variable-safety)
+- [Function binding](#function-binding)
 - [Classes, Inheritance, and Super](#classes-inheritance-and-super)
 
 ## Arrow Functions
@@ -121,6 +122,42 @@ let changeNumbers = () => {
 }
 let inner = changeNumbers();
 // inner will be 10
+```
+
+## Function binding
+
+CoffeeScript:
+
+```coffee
+hero =
+  name: "Batman"
+  alterEgo: "Bruce Wayne"
+  enemies: ['Two-Face', 'Bane']
+  printEnemies: ->
+    @enemies.forEach((enemy) =>
+      console.log @name + " fights " + enemy);
+
+hero.printEnemies()
+# -> "Batman fights Two-Face"
+# -> "Batman fights Bane"
+```
+
+ES6 equivalent:
+
+```js
+var hero = {
+  name: "Batman",
+  alterEgo: "Bruce Wayne",
+  enemies: ['Two-Face', 'Bane'],
+  printEnemies() {
+    this.enemies.forEach(enemy =>
+      console.log(this.name + " fights " + enemy));
+  }
+};
+
+hero.printEnemies();
+// -> "Batman fights Two-Face"
+// -> "Batman fights Bane"
 ```
 
 ## Classes, Inheritance, and Super
