@@ -85,3 +85,27 @@ let container = 'mug'
 console.log(`Filling the ${container} with ${liquid}...`);
 ```
 
+## Lexical Scope and Variable safety.
+
+CoffeeScript:
+
+```coffee
+outer = 1
+changeNumbers = ->
+  inner = -1
+  outer = 10
+inner = changeNumbers()
+// inner will be 10.
+```
+
+ES6 equivalent:
+
+```js
+let outer = 1;
+let changeNumbers = () => {
+  let inner = -1;
+  return outer = 10;
+}
+let inner = changeNumbers();
+// inner will be 10
+```
