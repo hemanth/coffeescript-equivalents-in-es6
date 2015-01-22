@@ -3,6 +3,15 @@
 
 *Please note this document is very much a work in progress. Contributions are welcome.*
 
+## Topics
+
+- [Arrow Functions](#arrow-functions)
+- [Splats](#splats)
+- [Array Comprehensions](#array-comprehensions)
+- [Default Params](#default-params)
+- [String interpolation / Template strings](#string-interpolation--template-strings)
+- [Lexical Scope and Variable safety.](#lexical-scope-and-variable-safety)
+- [Classes, Inheritance, and Super](#classes-inheritance-and-super)
 
 ## Arrow Functions
 
