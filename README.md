@@ -40,8 +40,9 @@ let race = (winner, ...runners) =>
 CoffeeScript:
 
 ```coffee
-numbers = [ 1, 2, 3 ];
+numbers = [ 1, 4, 9 ];
 (Math.sqrt num for num in numbers)
+# -> [1, 2, 3]
 ```
 
 ES7 equivalent:
@@ -49,8 +50,9 @@ ES7 equivalent:
 ___Proposed in ES6 but deferred to ES7.___
 
 ```js
-var numbers = [ 1, 2, 3 ];
+var numbers = [ 1, 4, 9 ];
 [for (num of numbers) Math.sqrt(num)];
+// -> [1, 2, 3]
 ```
 
 ## Default Params
@@ -75,6 +77,7 @@ CoffeeScript:
 container = 'mug'
 liquid = 'hot chocolate'
 console.log "Filling the #{container} with #{liquid}..."
+# -> Filling the mug with hot chocolate..."
 ```
 
 ES6 equivalent:
@@ -83,6 +86,7 @@ ES6 equivalent:
 let container = 'mug'
    ,liquid = 'hot chocolate';
 console.log(`Filling the ${container} with ${liquid}...`);
+// -> Filling the mug with hot chocolate..."
 ```
 
 ## Lexical Scope and Variable safety.
@@ -95,7 +99,7 @@ changeNumbers = ->
   inner = -1
   outer = 10
 inner = changeNumbers()
-// inner will be 10.
+# inner will be 10.
 ```
 
 ES6 equivalent:
