@@ -16,13 +16,13 @@
 
 ## Arrow Functions
 
-CoffeeScript:
+CoffeeScript: [:book:](http://coffeescript.org/#literals)
 
 ```coffee
 square = (x) -> x * x
 ```
 
-ES6 equivalent:
+ES6 equivalent: [:book:](http://tc39wiki.calculist.org/es6/arrow-functions/)
 
 ```js
 let square = (x) => x * x;
@@ -31,14 +31,14 @@ let square = (x) => x * x;
 
 ## Splats
 
-CoffeeScript:
+CoffeeScript: [:book:](http://coffeescript.org/#splats)
 
 ```coffee
 race = (winner, runners...) ->
     console.log winner, runners
 ```
 
-ES6 equivalent:
+ES6 equivalent: [:book:](http://tc39wiki.calculist.org/es6/rest-parameters/)
 
 ```js
 let race = (winner, ...runners) =>
@@ -47,7 +47,7 @@ let race = (winner, ...runners) =>
 
 ## Array Comprehensions
 
-CoffeeScript:
+CoffeeScript: [:book:](http://coffeescript.org/#loops)
 
 ```coffee
 numbers = [ 1, 4, 9 ];
@@ -55,7 +55,7 @@ numbers = [ 1, 4, 9 ];
 # -> [1, 2, 3]
 ```
 
-ES7 equivalent:
+ES7 equivalent: [:book:](http://tc39wiki.calculist.org/es6/array-comprehensions/)
 
 ___Proposed in ES6 but deferred to ES7.___
 
@@ -67,13 +67,13 @@ var numbers = [ 1, 4, 9 ];
 
 ## Default Params
 
-CoffeeScript:
+CoffeeScript: [:book:](http://coffeescript.org/#literals)
 
 ```coffee
 log = (message, level='log') -> console[level](message)
 ```
 
-ES6 equivalent:
+ES6 equivalent: [:book:](http://tc39wiki.calculist.org/es6/default-parameter-values/)
 
 ```js
 let log = (message, level = 'log') => console[level](message);
@@ -81,7 +81,7 @@ let log = (message, level = 'log') => console[level](message);
 
 ## String interpolation / Template strings
 
-CoffeeScript:
+CoffeeScript: [:book:](http://coffeescript.org/#strings)
 
 ```coffee
 container = 'mug'
@@ -90,7 +90,7 @@ console.log "Filling the #{container} with #{liquid}..."
 # -> Filling the mug with hot chocolate..."
 ```
 
-ES6 equivalent:
+ES6 equivalent: [:book:](http://tc39wiki.calculist.org/es6/template-strings/)
 
 ```js
 let container = 'mug'
@@ -101,7 +101,7 @@ console.log(`Filling the ${container} with ${liquid}...`);
 
 ## Lexical Scope and Variable safety.
 
-CoffeeScript:
+CoffeeScript: [:book:](http://coffeescript.org/#lexical-scope)
 
 ```coffee
 outer = 1
@@ -112,7 +112,7 @@ inner = changeNumbers()
 # inner will be 10.
 ```
 
-ES6 equivalent:
+ES6 equivalent: [:book:](http://tc39wiki.calculist.org/es6/block-scoping/)
 
 ```js
 let outer = 1;
@@ -126,7 +126,7 @@ let inner = changeNumbers();
 
 ## Function binding
 
-CoffeeScript:
+CoffeeScript: [:book:](http://coffeescript.org/#fat-arrow)
 
 ```coffee
 hero =
@@ -142,7 +142,7 @@ hero.printEnemies()
 # -> "Batman fights Bane"
 ```
 
-ES6 equivalent:
+ES6 equivalent: [:book:](http://tc39wiki.calculist.org/es6/arrow-functions/)
 
 ```js
 var hero = {
@@ -162,7 +162,7 @@ hero.printEnemies();
 
 ## Classes, Inheritance, and Super
 
-CoffeeScript:
+CoffeeScript: [:book:](http://coffeescript.org/#classes)
 
 ```coffee
 class Person
@@ -187,7 +187,7 @@ superman.move()
 # -> Superman flies 500m.
 ```
 
-ES6 equivalent:
+ES6 equivalent: [:book:](http://tc39wiki.calculist.org/es6/classes/)
 
 ```js
 class Person {
@@ -220,3 +220,8 @@ clark.move(100);
 superman.move();
 // -> Superman flies 500m.
 ```
+
+## Contributors
+
+- [hemanth](http://www.h3manth.com) (creator)
+- [stoeffel](https://github.com/stoeffel)
