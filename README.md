@@ -13,6 +13,7 @@
 - [Lexical Scope and Variable safety.](#lexical-scope-and-variable-safety)
 - [Function binding](#function-binding)
 - [Classes, Inheritance, and Super](#classes-inheritance-and-super)
+- [Destructuring Assignment](#destructuring-assignment)
 
 ## Arrow Functions
 
@@ -220,6 +221,44 @@ clark.move(100);
 superman.move();
 // -> Superman flies 500m.
 ```
+
+## Destructuring Assignment
+
+CoffeeScript: [![cs-doc](./cs.png)](http://coffeescript.org/#destructuring)
+
+```coffee
+hero =
+  name: "Spider-Man"
+  alterEgo: "Peter Benjamin Parker"
+  enemies: ["Electro", "Doctor Octopus"]
+
+{name, alterEgo} = hero
+# name = "Spider-Man"
+# alterEgo = "Peter Benjamin Parker"
+
+[head, tail...] = [1, 2, 3, 4, 5]
+# head = 1
+# tail = [2, 3, 4, 5]
+```
+
+ES6 equivalent: [![es6-doc](./js.png)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
+
+```js
+let hero = {
+  name: "Spider-Man",
+  alterEgo: "Peter Benjamin Parker",
+  enemies: ["Electro", "Doctor Octopus"]
+};
+
+let {name, alterEgo} = hero;
+// name = "Spider-Man"
+// alterEgo = "Peter Benjamin Parker"
+
+let [head, ...tail] = [1, 2, 3, 4, 5];
+// head = 1
+// tail = [2, 3, 4, 5]
+```
+
 
 ## Contributors
 
