@@ -1,8 +1,6 @@
 # CoffeeScript equivalents in ECMAScript 6
 > Inspiration from [es6-equivalents-in-es5](https://github.com/addyosmani/es6-equivalents-in-es5)
 
-*Please note this document is very much a work in progress. Contributions are welcome.*
-
 ## Topics
 
 - [Arrow Functions](#arrow-functions)
