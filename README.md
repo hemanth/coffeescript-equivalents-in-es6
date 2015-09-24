@@ -18,7 +18,7 @@
 - [Array Slicing](#array-slicing)
 - [Array Splicing](#array-splicing)
 - [Ranges](#ranges)
-- [Chained Comprehensions](#chained-comprehensions)
+- [Chained Comprehensions](#chained-comparisons)
 - [Block Regular Expressions](#block-regular-expressions)
 - [Operators and Aliases](#operators-and-aliases)
 - [Generators](#generators)
