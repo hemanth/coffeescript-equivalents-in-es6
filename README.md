@@ -458,13 +458,13 @@ ES6 equivalent:
 // There isn't really any. This doesn't get the engine-related caching that
 // regex literals often get.
 let OPERATOR = new RegExp('^(' +
-  '?: [-=]>' +             // function
-   '| [-+*/%<>&|^!?=]=' +  // compound assign / compare
-   '| >>>=?' +             // zero-fill right shift
-   '| ([-+:])\\1' +        // doubles
-   '| ([&|<>])\\2=?' +     // logic / shift
-   '| \\?\\.' +            // soak access
-   '| \\.{2,3}' +          // range or splat
+  '?:[-=]>' +             // function
+   '|[-+*/%<>&|^!?=]=' +  // compound assign / compare
+   '|>>>=?' +             // zero-fill right shift
+   '|([-+:])\\1' +        // doubles
+   '|([&|<>])\\2=?' +     // logic / shift
+   '|\\?\\.' +            // soak access
+   '|\\.{2,3}' +          // range or splat
 ')')
 ```
 
