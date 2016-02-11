@@ -1,4 +1,4 @@
-# CoffeeScript equivalents in ECMAScript6/E2015
+# CoffeeScript equivalents in ECMAScript6/ES2015
 > Inspiration from [es6-equivalents-in-es5](https://github.com/addyosmani/es6-equivalents-in-es5)
 
 *Note: a few of these examples are taken from CoffeeScript's own website.*
