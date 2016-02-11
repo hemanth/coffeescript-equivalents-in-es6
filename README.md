@@ -1,4 +1,4 @@
-# CoffeeScript equivalents in ECMAScript 6 [(now ECMAScript 2015)](http://www.ecma-international.org/publications/standards/Ecma-262.htm)
+# CoffeeScript equivalents in ECMAScript6/E2015
 > Inspiration from [es6-equivalents-in-es5](https://github.com/addyosmani/es6-equivalents-in-es5)
 
 *Note: a few of these examples are taken from CoffeeScript's own website.*
@@ -511,10 +511,6 @@ ES6 Equivalents: [![es6-doc](./js.png)](https://developer.mozilla.org/en-US/docs
 CoffeeScript: [![cs-doc](./cs.png)](http://coffeescript.org/#fat-arrow)
 
 ```coffee
-lazyRange = (n) ->
-  for i til n
-    yield i
-
 identity = (iter) ->
   yield from iter
 
