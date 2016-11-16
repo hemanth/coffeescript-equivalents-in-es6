@@ -48,10 +48,8 @@ ES6 equivalent:
 ```js
 // There is no exact equivalent, but there are ternary expressions for common
 // cases like above.
-function grade(student) {
-  if (student == null) {
-    throw new Error('student is required')
-  } else if (student.excellentWork) {
+function grade(student = new Error('student is required')) {
+   if (student.excellentWork) {
     return 'A+';
   } else if (student.okayStuff) {
     return student.triedHard ? 'B' : 'B-';
