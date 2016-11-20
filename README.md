@@ -48,7 +48,7 @@ ES6 equivalent:
 ```js
 // There is no exact equivalent, but there are ternary expressions for common
 // cases like above.
-function grade(student = new Error('student is required')) {
+const grade = (student = new Error('student is required')) => {
    if (student.excellentWork) {
     return 'A+';
   } else if (student.okayStuff) {
